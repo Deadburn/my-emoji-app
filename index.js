@@ -41,13 +41,11 @@ function local() {
 }
 
 addBtn.addEventListener("click", function() {
-  
   // ya da if (inputField.value)
   if (inputField.value !== ""){
     myEmojis.push(inputField.value)
     local()
     renderEmojis()
-    
   }
 })
 
