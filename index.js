@@ -1,4 +1,4 @@
-let myEmojis = []
+let myEmojis = ["😀","🥲","😀","👹","😀","🤗",]
 const inputField = document.getElementById("emoji-input")
 const emojiContainer = document.getElementById("emoji-container")
 const addBtn = document.getElementById("push-btn")
@@ -41,13 +41,13 @@ function local() {
 }
 
 addBtn.addEventListener("click", function() {
-  //console. log(inputField.value)
+  
   // ya da if (inputField.value)
   if (inputField.value !== ""){
     myEmojis.push(inputField.value)
     local()
     renderEmojis()
-    //console.log(myEmojis)
+    
   }
 })
 
